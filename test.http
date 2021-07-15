@@ -1,0 +1,39 @@
+
+### GET ALL STUDENTS DETAILS  (please click Send Request below)
+GET http://localhost:5000/items HTTP/1.1
+
+### GET SINGLE STUDENTS DETAILS (please click Send Request below)
+GET http://localhost:5000/items/s3 HTTP/1.1
+
+### ADD NEW STUDENTS DETAILS - Automatic generated ID (please click Send Request below)
+POST http://localhost:5000/items HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "New Student",
+  "subject_1": "Upload mark",
+  "subject_2": "Upload mark",
+  "subject_3": "Upload mark",
+  "subject_4": "Upload mark",
+  "subject_5": "Upload mark"
+ 
+}
+
+### DELETE STUDENTS DETAILS  (please click Send Request below)
+DELETE http://localhost:5000/items/s2 HTTP/1.1
+
+### UPDATE STUDENTS DETAILS  (please click Send Request below)
+PUT http://localhost:5000/items/s1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Updated student name",
+  "subject_1": "Updated mark1",
+  "subject_2": "Updated mark2",
+  "subject_3": "Updated mark3",
+  "subject_4": "Updated mark4",
+  "subject_5": "Updated mark5"
+}
+
+### GET REPORT  (please click Send Request below)
+GET http://localhost:5000/items HTTP/1.1
